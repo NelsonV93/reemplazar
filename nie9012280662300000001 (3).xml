@@ -1,85 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <NominaIndividualDeAjuste xmlns="dian:gov:co:facturaelectronica:NominaIndividualDeAjuste"
-  SchemaLocation="" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"
-  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+  xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
   xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
   xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaLocation=""
   xsi:schemaLocation="dian:gov:co:facturaelectronica:NominaIndividualDeAjuste NominaIndividualDeAjusteElectronicaXSD.xsd">
   <ext:UBLExtensions>
     <ext:UBLExtension>
       <ext:ExtensionContent>
         <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
-          Id="xmldsig-ab2df1fb-1819-413d-8b8c-79e9ed75638a">
+          Id="xmldsig-faa14033-d086-486e-87cb-4ac0907c0ae3">
           <ds:SignedInfo>
-            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
-            <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
-            <ds:Reference Id="xmldsig-ab2df1fb-1819-413d-8b8c-79e9ed75638a-ref0" URI="">
+            <ds:CanonicalizationMethod
+              Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+            <ds:SignatureMethod
+              Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512" />
+            <ds:Reference Id="xmldsig-faa14033-d086-486e-87cb-4ac0907c0ae3-ref0" URI="">
               <ds:Transforms>
-                <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                <ds:Transform
+                  Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
               </ds:Transforms>
-              <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-              <ds:DigestValue>bHqXWNOZT9BDzy2K8XwaRVbUAD6fn6HCVjloGfOIj/0=</ds:DigestValue>
+              <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+              <ds:DigestValue>
+                nEZZdWbV4Z+tYmzAlX1sPDmPtvTtaQYYIT4eSG3DxjeYchcccI+wrU6XJ1Ih9fpBTODyBCEWI9hzZkdK9e/zTg==</ds:DigestValue>
             </ds:Reference>
-            <ds:Reference Id="xmldsig-ab2df1fb-1819-413d-8b8c-79e9ed75638a-ref1" URI="#KeyInfo">
-              <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-              <ds:DigestValue>c9IayWJHVWyW2bLvMczMArKlxJhIZPrNUeGUdlcVqmM=</ds:DigestValue>
+            <ds:Reference URI="#xmldsig-75551690-3a9e-4367-b21e-3df3b3e58a7e-keyinfo">
+              <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+              <ds:DigestValue>
+                fAv9hWJD+4LIcMS6OPCT/rkzWZX03KVKoE49piPzmo0+0Mb6Aa7ZqnG/4zogaF631Gb9vIvL+fz0xIHaBBK+NA==</ds:DigestValue>
             </ds:Reference>
             <ds:Reference Type="http://uri.etsi.org/01903#SignedProperties"
-              URI="#xmldsig-ab2df1fb-1819-413d-8b8c-79e9ed75638a-signedprops">
-              <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-              <ds:DigestValue>M7lNMGgMhJXvJfCsldoO6Z49ZKd2LIsESFocvHw6IUA=</ds:DigestValue>
+              URI="#xmldsig-faa14033-d086-486e-87cb-4ac0907c0ae3-signedprops">
+              <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+              <ds:DigestValue>
+                8/IGWkNUcdIp4YIQpr2B3uQa4Wpe1D9yaIH/blDYaseJWrk+ca6jfw5rS9YJaLzYwAMxORAC0efyko/vaRqBvA==</ds:DigestValue>
             </ds:Reference>
           </ds:SignedInfo>
-          <ds:SignatureValue Id="xmldsig-ab2df1fb-1819-413d-8b8c-79e9ed75638a-sigvalue">
-            EYRvGV2gT5PB8JNq3IIq3CDWmhluFxeEZaWAvTDYedwTsk5C90JHcxXoT36lxUZKJCgwstPq9wAF3En4MJTTDpZUasayHKzrX5r6C5Lh8tq3LpwxUDXultlnzSeS0g3sq5V7SaZuUM8+jXvNoj4DgMw3C3y/w8DHeMwLCjkhSPb8gh/mzuubqjc/JEJ4eU1vO2eM2bvh6eo2x30WrSPlKVJQSNtJqMV7HPFnCrgAC+AZNmHxEjnb4urwplj9lPe9ZvRA3Y/Tt9AhIO94epKNJfspKjRkp7lA3kkXBBTgNYpBR/SDDECHiOI/M4sF2RYGXwAWlFe7kCysmChWPhFFpA==</ds:SignatureValue>
-          <ds:KeyInfo Id="KeyInfo">
+          <ds:SignatureValue Id="xmldsig-faa14033-d086-486e-87cb-4ac0907c0ae3-sigvalue">
+            J+2LjDuY2521FZ5+s1jADlJLOm2CjhjARiJ/gDsHWTqLiCgZfgeAnWuzMk/1EpDl7YuVnyYhieN68xaXUDu6DOfs2Y4ayDg4uHudywrPM+S1tqQ8BqC9Z0xKNL4i/VwpauDF2gdAObJx2FMDIXcB0jjEDSqEKlwtHwq74P6u2e0wrK1q4Cnwjd8HLsWEerF0y71qnO9r3LY+RVyGP8GDCHoue06WSO2EZoYFf+bCNwQgaGoax7znIK/Vi0Svm8mfDAGwQ5Mlzw965S0NamiLI548HRDMwDEqD54dmh8DUpVONkWRoRB2VI4BarQdjZJiaAQ8LG4OeU7BpuYqlgQ7OA==</ds:SignatureValue>
+          <ds:KeyInfo Id="xmldsig-75551690-3a9e-4367-b21e-3df3b3e58a7e-keyinfo">
             <ds:X509Data>
-              <ds:X509Certificate>
-                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</ds:X509Certificate>
+              <ds:X509Certificate>MIIILzCCBhegAwIBAgIIfPB+IevvLUYwDQYJKoZIhvcNAQELBQAwgbYxIzAhBgkq
+                hkiG9w0BCQEWFGluZm9AYW5kZXNzY2QuY29tLmNvMSYwJAYDVQQDEx1DQSBBTkRF
+                UyBTQ0QgUy5BLiBDbGFzZSBJSSB2MjEwMC4GA1UECxMnRGl2aXNpb24gZGUgY2Vy
+                dGlmaWNhY2lvbiBlbnRpZGFkIGZpbmFsMRIwEAYDVQQKEwlBbmRlcyBTQ0QxFDAS
+                BgNVBAcTC0JvZ290YSBELkMuMQswCQYDVQQGEwJDTzAeFw0yMzA3MjQxOTAwMDBa
+                Fw0yNDA3MjMxODU5MDBaMIIBITEVMBMGA1UECRMMQ1JBIDQzIDMxIDg5MSIwIAYJ
+                KoZIhvcNAQkBFhNTT1BPUlRFQElOVFJFU0NPLkNPMRcwFQYDVQQDEw5JTlRSRVND
+                TyBTLkEuUzETMBEGA1UEBRMKOTAxMjI4MDY2NDE2MDQGA1UEDBMtRW1pc29yIEZh
+                Y3R1cmEgRWxlY3Ryb25pY2EgLSBQZXJzb25hIEp1cmlkaWNhMTowOAYDVQQLEzFF
+                bWl0aWRvIHBvciBBbmRlcyBTQ0QgQWMgMjYgNjlDIDAzIFRvcnJlIEIgT2YgNzAx
+                MQ4wDAYDVQQKEwVhZG1pbjERMA8GA1UEBxMITUVERUxMSU4xEjAQBgNVBAgTCUFO
+                VElPUVVJQTELMAkGA1UEBhMCQ08wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+                AoIBAQDNb1KbzaBcsRLCOTmvXvQI6HiXI6CTlT6vUX6339AvQPhZUh3w1OFnITiz
+                rqncdpzFPLnsAVlokt1J/5g0tJLua4Ip9WEstCv6jgtvONglBoT9uZF2POAlb+NY
+                eugrk6SzRjTeL3LES9HtGS6vIczAwkgbDt1xw8GnGGVzgD16bPffLXozuhRWkHoI
+                HTRQmPDiwo7BLkgNHNxbi8eqQjghhjtvw9qFZTVY6WS4QFp+0f0nRr21NE9ZgcOe
+                XtLaTa1cSsmdHAPomJAOtq4PDZdVA9UPhfeod0381BpwFXbDBkHO3t7GTY7X+GUq
+                P02RnOPojWPNZzql1MkC4/jtJlkZAgMBAAGjggLRMIICzTAMBgNVHRMBAf8EAjAA
+                MB8GA1UdIwQYMBaAFDpXUNB3Gz7Wi+r/l5nX/4QCSCkPMDcGCCsGAQUFBwEBBCsw
+                KTAnBggrBgEFBQcwAYYbaHR0cDovL29jc3AuYW5kZXNzY2QuY29tLmNvMB4GA1Ud
+                EQQXMBWBE1NPUE9SVEVASU5UUkVTQ08uQ08wggG4BgNVHSAEggGvMIIBqzCCAVUG
+                DSsGAQQBgfRIAQIGBQAwggFCMIIBPgYIKwYBBQUHAgIwggEwHoIBLABMAGEAIAB1
+                AHQAaQBsAGkAegBhAGMAaQDzAG4AIABkAGUAIABlAHMAdABlACAAYwBlAHIAdABp
+                AGYAaQBjAGEAZABvACAAZQBzAHQA4QAgAHMAdQBqAGUAdABhACAAYQAgAGwAYQAg
+                AFAAQwAgAGQAZQAgAEYAYQBjAHQAdQByAGEAYwBpAPMAbgAgAEUAbABlAGMAdABy
+                APMAbgBpAGMAYQAgAHkAIABEAFAAQwAgAGUAcwB0AGEAYgBsAGUAYwBpAGQAYQBz
+                ACAAcABvAHIAIABBAG4AZABlAHMAIABTAEMARAAuACAAQwDzAGQAaQBnAG8AIABk
+                AGUAIABBAGMAcgBlAGQAaQB0AGEAYwBpAPMAbgA6ACAAMQA2AC0ARQBDAEQALQAw
+                ADAANDBQBg0rBgEEAYH0SAEBAQcAMD8wPQYIKwYBBQUHAgEWMWh0dHBzOi8vd3d3
+                LmFuZGVzc2NkLmNvbS5jby9kb2NzL0RQQ19BbmRlc1NDRC5wZGYwHQYDVR0lBBYw
+                FAYIKwYBBQUHAwIGCCsGAQUFBwMEMDkGA1UdHwQyMDAwLqAsoCqGKGh0dHA6Ly9j
+                cmwuYW5kZXNzY2QuY29tLmNvL0NsYXNlSUl2Mi5jcmwwHQYDVR0OBBYEFIj3BvDl
+                oQ55+nn/epFAzztGCfM1MA4GA1UdDwEB/wQEAwIF4DANBgkqhkiG9w0BAQsFAAOC
+                AgEARI+EhxdWneKwcRpI1x2HJDMt7ixas+rxf6eKidb0emFT03g0lwpOVhcfjDu7
+                ZE279OiajDdRW+diwl2xG6yR3N4j+F/wvS0SbTe+3Ul373TuLroFxyYAAXITyx1G
+                jCzkJr9h49ylydnAXWQGJ7JSIKF41DEGRHpNjumwC+sMOviuhu9VRIc4CiYGaUwu
+                pDY/iU7J3dwojeg9U86e563ASmocoFQiOhQJ0CQHnpbc8E98vvyShMRT1BiWqn5g
+                9UFXtX7oHYkU/Tvn2AdRvvnFjn+oLLotVyEUi1UwAordp0qveVH4JrZ/I9n6fEsJ
+                b79Hh9+24EQwDb1xu2GxEYxKUKmGXhnS3DQHTu15KLxiURQLqLXiw2oNsenl1F7y
+                8jDJmkWNoVUMIhCPS8whvO3rluS+3GLBwhntSo6PCG1sfXr3rQDWyKTNyP51/FJk
+                UDf51pqen+kIdmaebVmbivXbAo+cJg4GceIUSIAED/Tdaq5QOXIRHqf7u43DGLGQ
+                l6haGBcsk8ni5Ozv5Ac/TktVbnIkcZxmdiF5/cOZEz3mmnOozB5dQM4PbUCIxJO5
+                OfdA3TwLDJMwLQH9aNr33jz9C158/rtZtqcJvxIY4FHNJBFwXtAf+xREIXnToXFb
+                zUFiOxyd3zUiK+MSY2DZM8RbZlV8x7+adaRDTrsC+Q2SKeM=</ds:X509Certificate>
             </ds:X509Data>
           </ds:KeyInfo>
           <ds:Object>
             <xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#"
               xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#"
-              Target="#xmldsig-ab2df1fb-1819-413d-8b8c-79e9ed75638a">
-              <xades:SignedProperties Id="xmldsig-ab2df1fb-1819-413d-8b8c-79e9ed75638a-signedprops">
+              Target="#xmldsig-faa14033-d086-486e-87cb-4ac0907c0ae3">
+              <xades:SignedProperties
+                Id="xmldsig-faa14033-d086-486e-87cb-4ac0907c0ae3-signedprops">
                 <xades:SignedSignatureProperties>
-                  <xades:SigningTime>2023-03-03T10:34:42.257-05:00</xades:SigningTime>
+                  <xades:SigningTime>2023-12-28T23:55:28</xades:SigningTime>
                   <xades:SigningCertificate>
                     <xades:Cert>
                       <xades:CertDigest>
-                        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-                        <ds:DigestValue>BCyOxk8EHsMEQYvKwpPZTXf0A8Q1C5UTOSsOpvrxO1A=</ds:DigestValue>
+                        <ds:DigestMethod
+                          Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+                        <ds:DigestValue>
+                          lhI2cehYphR8sgiLm/BdZRb7vtVYRmMfiPOZqdj+jg/05TTYJFK9NJBPa05yp4N4aEP1t0sgHlyLWYAK3tq+IQ==</ds:DigestValue>
                       </xades:CertDigest>
                       <xades:IssuerSerial>
-                        <ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes SCD.,OU=Division de
-                          certificacion entidad final,CN=CA ANDES SCD S.A. Clase
-                          II,1.2.840.113549.1.9.1=#1614696e666f40616e6465737363642e636f6d2e636f</ds:X509IssuerName>
-                        <ds:X509SerialNumber>4830742271669858241</ds:X509SerialNumber>
+                        <ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes
+                          SCD,OU=Division de certificacion entidad
+                          final,CN=CA ANDES SCD S.A. Clase II
+                          v2,E=info@andesscd.com.co</ds:X509IssuerName>
+                        <ds:X509SerialNumber>9002834339270962502</ds:X509SerialNumber>
                       </xades:IssuerSerial>
                     </xades:Cert>
                     <xades:Cert>
                       <xades:CertDigest>
-                        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-                        <ds:DigestValue>Cs7emRwtXWVYHJrqS9eXEXfUcFyJJBqFhDFOetHu8ts=</ds:DigestValue>
+                        <ds:DigestMethod
+                          Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+                        <ds:DigestValue>
+                          L+GR4ozHO/SpmNwQVKr25N+ItB6Xdx9tq2zvkPe4NXOFKdzNnmwNetYg1w14zfWP8XFejj5bZtxmbdy9d2GPjQ==</ds:DigestValue>
                       </xades:CertDigest>
                       <xades:IssuerSerial>
-                        <ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes SCD,OU=Division de
-                          certificacion,CN=ROOT CA ANDES SCD
-                          S.A.,1.2.840.113549.1.9.1=#1614696e666f40616e6465737363642e636f6d2e636f</ds:X509IssuerName>
+                        <ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes
+                          SCD,OU=Division de certificacion,CN=ROOT CA
+                          ANDES SCD S.A.,E=info@andesscd.com.co</ds:X509IssuerName>
                         <ds:X509SerialNumber>3184328748892787122</ds:X509SerialNumber>
                       </xades:IssuerSerial>
                     </xades:Cert>
                     <xades:Cert>
                       <xades:CertDigest>
-                        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-                        <ds:DigestValue>PbsKGMpB0A2Y9NAz6F8LkU5nR+ONJASyK9D/bRTdbZ0=</ds:DigestValue>
+                        <ds:DigestMethod
+                          Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+                        <ds:DigestValue>
+                          qJwm8l4FZq3O4ZM3iDY4hVLVBycbHry6S03JbXjL52asHc+fKEDr5d4qmI2kXouLU8U0ro3r6OebWJ/6yflI6Q==</ds:DigestValue>
                       </xades:CertDigest>
                       <xades:IssuerSerial>
-                        <ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes SCD,OU=Division de
-                          certificacion,CN=ROOT CA ANDES SCD
-                          S.A.,1.2.840.113549.1.9.1=#1614696e666f40616e6465737363642e636f6d2e636f</ds:X509IssuerName>
+                        <ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes
+                          SCD,OU=Division de certificacion,CN=ROOT CA
+                          ANDES SCD S.A.,E=info@andesscd.com.co</ds:X509IssuerName>
                         <ds:X509SerialNumber>4951343590990220136</ds:X509SerialNumber>
                       </xades:IssuerSerial>
                     </xades:Cert>
@@ -89,16 +146,20 @@
                       <xades:SigPolicyId>
                         <xades:Identifier>
                           https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier>
+                        <xades:Description>Política de firma para facturas
+                          electrónicas de la República de Colombia.</xades:Description>
                       </xades:SigPolicyId>
                       <xades:SigPolicyHash>
-                        <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
-                        <ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue>
+                        <ds:DigestMethod
+                          Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512" />
+                        <ds:DigestValue>
+                          dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue>
                       </xades:SigPolicyHash>
                     </xades:SignaturePolicyId>
                   </xades:SignaturePolicyIdentifier>
                   <xades:SignerRole>
                     <xades:ClaimedRoles>
-                      <xades:ClaimedRole>third party</xades:ClaimedRole>
+                      <xades:ClaimedRole>supplier</xades:ClaimedRole>
                     </xades:ClaimedRoles>
                   </xades:SignerRole>
                 </xades:SignedSignatureProperties>
@@ -111,46 +172,46 @@
   </ext:UBLExtensions>
   <TipoNota>1</TipoNota>
   <Reemplazar>
-    <ReemplazandoPredecesor NumeroPred="NOM064"
-      CUNEPred="95629c3e28e9ded6581223599298fdfbdcc027f8e64b3304b96c1e5a3eb9c157c14530142fdb8479c9870ac1be384c3a"
-      FechaGenPred="2022-12-09" />
-    <Periodo FechaIngreso="2020-01-01" FechaLiquidacionInicio="2022-11-01"
-      FechaLiquidacionFin="2022-11-30" TiempoLaborado="1064" FechaGen="2023-03-03" />
-    <NumeroSecuenciaXML Consecutivo="006" Prefijo="ADJ" Numero="ADJ006" />
+    <ReemplazandoPredecesor NumeroPred="NE070"
+      CUNEPred="afb899b2208cc76fec2e9331c7bc53a2b891e8d65b6c60dddd40dfc70905f5e4733df67ec4cf2c8b4ffb5c5caf579088"
+      FechaGenPred="2023-03-10" />
+    <Periodo FechaIngreso="2023-02-01" FechaLiquidacionInicio="2023-02-01"
+      FechaLiquidacionFin="2023-02-28" TiempoLaborado="28" FechaGen="2023-12-28" />
+    <NumeroSecuenciaXML Consecutivo="102" Prefijo="NE" Numero="NE102" />
     <LugarGeneracionXML Pais="CO" DepartamentoEstado="05" MunicipioCiudad="05001" Idioma="es" />
-    <ProveedorXML NIT="901228066" DV="4" SoftwareID="72f95f92-afa5-454b-b54f-8c1aa9700670"
-      SoftwareSC="02b936250a8fa7944768704e95940cd8c641386c0628d52faba62e37f0919d60d863f1a9127b472a7b8e3433b9e3541e" />
+    <ProveedorXML NIT="901228066" DV="4" SoftwareID="72f95f92-afa5-454b-b54f-8c1aa9700670-9"
+      SoftwareSC="3bd507568d799a72f51e8cc175c0ce794be4a34d44631d59d2103ffa249d836fdfec17673f4174b4d81ec8ae03df9193" />
     <CodigoQR>
-      https://catalogo-vpfe.dian.gov.co/document/searchqr?documentkey=4b9eebd5e77789547b7a5d3a8915926a3c59eeb4ccc9e81d4f2e033259e068336b9252dbacd814ab3c984784e055af9d</CodigoQR>
+      https://catalogo-vpfe.dian.gov.co/document/searchqr?documentkey=26e2f83fb840c96912be077f66bcf3db05cc375a29374e736aab73fe5d7254f5c97dc78e04d1332e3a6b9b9a5ae7e100</CodigoQR>
     <InformacionGeneral
-      Version="V1.0: Nota de Ajuste de Documento Soporte de Pago de Nómina Electrónica" Ambiente="1"
-      TipoXML="103"
-      CUNE="4b9eebd5e77789547b7a5d3a8915926a3c59eeb4ccc9e81d4f2e033259e068336b9252dbacd814ab3c984784e055af9d"
-      EncripCUNE="CUNE-SHA384" FechaGen="2023-03-03" HoraGen="22:34:41-05:00" PeriodoNomina="4"
-      TipoMoneda="COP" />
-    <Empleador RazonSocial="Intresco S.A.S" NIT="901228066" DV="4" Pais="CO" DepartamentoEstado="05"
-      MunicipioCiudad="05001" Direccion="Cra 43 # 31 - 89" />
+      Version="V1.0: Nota de Ajuste de Documento Soporte de Pago de Nómina Electrónica"
+      Ambiente="1" TipoXML="103"
+      CUNE="26e2f83fb840c96912be077f66bcf3db05cc375a29374e736aab73fe5d7254f5c97dc78e04d1332e3a6b9b9a5ae7e100"
+      EncripCUNE="CUNE-SHA384" FechaGen="2023-12-28" HoraGen="23:55:28-05:00"
+      PeriodoNomina="4" TipoMoneda="COP" TRM="1" />
+    <Empleador RazonSocial="Intresco S.A.S" NIT="901228066" DV="4" Pais="CO"
+      DepartamentoEstado="05" MunicipioCiudad="05001" Direccion="Cra 43 # 31 - 89" />
     <Trabajador TipoTrabajador="01" SubTipoTrabajador="00" AltoRiesgoPension="false"
-      TipoDocumento="13" NumeroDocumento="1214719817" PrimerApellido="Ossa" SegundoApellido="Velez"
-      PrimerNombre="Nelson Andrés" OtrosNombres="Nelson Andrés" LugarTrabajoPais="CO"
+      TipoDocumento="13" NumeroDocumento="1085342252" PrimerApellido="Pinilla"
+      SegundoApellido="Lara" PrimerNombre="Juan" OtrosNombres="Felipe" LugarTrabajoPais="CO"
       LugarTrabajoDepartamentoEstado="05" LugarTrabajoMunicipioCiudad="05001"
-      LugarTrabajoDireccion="Cra 43 # 31 - 89" SalarioIntegral="false" TipoContrato="2"
-      Sueldo="1510000.0" CodigoTrabajador="10" />
+      LugarTrabajoDireccion="Cra 43 # 31 - 89" SalarioIntegral="false" TipoContrato="1"
+      Sueldo="1700000.0" CodigoTrabajador="9" />
     <Pago Forma="1" Metodo="1" />
     <FechasPagos>
-      <FechaPago>2023-03-03</FechaPago>
+      <FechaPago>2023-12-28</FechaPago>
     </FechasPagos>
     <Devengados>
-      <Basico DiasTrabajados="30" SueldoTrabajado="1510000.0" />
-      <Transporte AuxilioTransporte="117172.0" />
+      <Basico DiasTrabajados="30" SueldoTrabajado="1700000.00" />
+      <Transporte AuxilioTransporte="140606.00" />
     </Devengados>
     <Deducciones>
-      <Salud Porcentaje="4" Deduccion="60400.0" />
-      <FondoPension Porcentaje="4" Deduccion="60400.0" />
+      <Salud Porcentaje="4" Deduccion="68000.0" />
+      <FondoPension Porcentaje="4" Deduccion="68000.0" />
     </Deducciones>
     <Redondeo>0.00</Redondeo>
-    <DevengadosTotal>1627172.00</DevengadosTotal>
-    <DeduccionesTotal>120800.00</DeduccionesTotal>
-    <ComprobanteTotal>1506372.00</ComprobanteTotal>
+    <DevengadosTotal>1840606.00</DevengadosTotal>
+    <DeduccionesTotal>136000.00</DeduccionesTotal>
+    <ComprobanteTotal>1704606.00</ComprobanteTotal>
   </Reemplazar>
 </NominaIndividualDeAjuste>
